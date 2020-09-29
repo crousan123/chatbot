@@ -1,0 +1,78 @@
+intents:
+- bad_say
+- bye
+- diet
+- help
+- hi
+- records
+entities:
+- date
+- weight
+slots:
+  date:
+    type: text
+templates:
+  utter_greet:
+  - text: Hey! How are you?
+  utter_cheer_up:
+  - text: 'Here is something to cheer you up:'
+    image: https://i.imgur.com/nGF1K8f.jpg
+  utter_did_that_help:
+  - text: Did that help you?
+  utter_happy:
+  - text: Great carry on!
+  utter_goodbye:
+  - text: Bye
+  utter_say_hi:
+  - text: Привет
+  utter_start_records:
+  - text: Это очень хорошо, пожалуйста ответе на несколько вопросов и тогда я смогу
+      записать вас в зал
+  utter_to_record:
+  - text: Вы записаны в зал
+  utter_ask_date:
+  - text: Укажите время
+  utter_submit:
+  - text: Данные получены. Спасибо.
+  utter_wrong_gender:
+  - text: Вы ввели неверный пол , возможно вами была допущена ошибка , либо если мы
+      ущемляем ваши права, то просьба связаться с администратором.
+  utter_wrong_age:
+  - text: 'Вы ввели неверный возраст , возраст должен содержать только цифры , и  варьироваться
+      в пределах от 14 до 90 лет '
+  utter_wrong_trainig_level:
+  - text: Уровень физической подготовки должен быть низкий , средний или высокий (именно
+      так , как здесь написано)
+  utter_wrong_weight:
+  - text: 'Вы ввели недопустимое значение веса, вес должен быть числом от 30 до 250 '
+  utter_wrong_hips:
+  - text: Обхват бедер введен неверно ,  обхват бедер - число от 20 до 150 сантиметров
+  utter_wrong_feed_count:
+  - text: Возможно вы питаетесь слишком часто, так как число приемов пищи должно быть
+      числом от 1 до 10
+  utter_wrong_preferences:
+  - text: Вы ввели неверные предпочтения в еде , возможные предпочтения :сладкое ,
+      острое , соленое , кислое , горькое.
+  utter_wrong_waist:
+  - text: Обхват талии введен неверно , обхват талии - число от 20 до 150 сантиметров
+  utter_wrong_chest:
+  - text: Обхват груди введен неверно , обхват груди - число от 20 до 150 сантиметров
+  utter_wrong_date:
+  - text: Дата введена не правильно
+  utter_diet_start:
+  - text: Для того чтобы верно определить диету мне требуется узнать о вас некоторую
+      информацию
+  ask_date:
+  - text: Укажите дату
+  start_records:
+  - text: Это очень хорошо, пожалуйста ответе на несколько вопросов и тогда я смогу
+      записать вас в зал
+actions:
+- help
+- utter_diet_start
+- utter_goodbye
+- utter_say_hi
+- utter_start_records
+forms:
+- diet_form
+- records_form
